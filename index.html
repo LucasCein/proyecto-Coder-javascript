@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
     <title>Document</title>
 </head>
-<body>
+
+<body class="grid">
+    <section class="input">
+        <h2>Convertidor de Bases</h2>
+        <div>
+            <label><input type="checkbox" class="checkbox-round" id="ckConvertir"/>Convertir</label>
+            <label><input type="checkbox" class="checkbox-round" id="ckCalculadora"/>Calculadora</label>
+        </div>
+        
+        <h3>Numero</h3>
+        <input class="textbox" type="number" id="num">
+        <button id="btnConvertir">Convertir</button>
+    </section>
+    <section>
+        <h3>Resultados</h3>
+        <label>Binario</label>
+        <input type="number" disabled id="Binario">
+        <label>Octal</label>
+        <input type="number" disabled id="octal">
+        <label>Decimal</label>
+        <input type="number" disabled id="dec">
+        <label>Hexadecimal</label>
+        <input type="text" disabled id="hexa">
+    </section>
+    <section>
+        <h3>Historial</h3>
+        <table id="tablaHistorial">
+            <tr>
+                <th>Binario</th>
+                <th>Octal</th>
+                <th>Decimal</th>
+                <th>Hexadecimal</th>
+            </tr>
+        </table>
+    </section>
     
+
     <script src="./assets/main.js"></script>
+    <script src="./assets/chekbox.js"></script>
 </body>
+
 </html>
